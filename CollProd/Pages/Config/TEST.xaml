@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="CollProd.Pages.Config.TEST"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="350" d:DesignWidth="300">
+    <Grid Style="{StaticResource ContentRoot}">
+        <ScrollViewer>
+            <StackPanel MinWidth="200">
+                <TextBlock Text="TEST" Style="{StaticResource Heading2}" HorizontalAlignment="Center" Margin="0,10,2,2"/>
+                <TextBlock Text="SNMP" FontSize="12"  Margin="0,10,2,2" FontWeight="Bold"/>
+                <TextBox x:Name="txttestsnmp" Margin="10,7,5,0" Height="67" IsReadOnly="True"/>
+                <TextBlock Text="SSH" FontSize="12"  Margin="0,10,2,2" FontWeight="Bold"/>
+                <TextBox x:Name="txttestssh" Margin="10,7,5,0" Height="67" IsReadOnly="true"/>
+                <Button x:Name="btntest" Margin="10,20,5,0" Content="Test"  />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>
